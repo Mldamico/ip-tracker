@@ -4,6 +4,10 @@
   font-size: 18px;
 }
 
+body {
+  background-color: #ddd;
+}
+
 header {
   background-image: url('./assets/images/pattern-bg.png');
   width: 100%;
@@ -41,4 +45,29 @@ h1 {
   border: 0;
   background-color: hsl(0, 0%, 17%);
   border-radius: 0 15px 15px 0;
+}
+.Info__container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  top: 230px;
+  left: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.InfoItem__container {
+  padding: 50px;
+}
+
+.InfoItem__title {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.InfoItem__description {
+  font-size: 24px;
+  font-weight: bold;
 }
