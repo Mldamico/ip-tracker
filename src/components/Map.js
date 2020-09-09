@@ -18,14 +18,25 @@ export const MapScreen = compose(
   }),
   withScriptjs,
   withGoogleMap
-)((props) => (
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: props.lat, lng: props.lng }}
-    center={{ lat: props.lat, lng: props.lng }}
-  >
-    {props.isMarkerShown && (
-      <Marker position={{ lat: props.lat, lng: props.lng }} />
-    )}
-  </GoogleMap>
-));
+)((props) => {
+  const { location } = useContext(LocationContext);
+
+  return (
+    <GoogleMap
+      defaultZoom={8}
+      center={{
+        lat: location ? location.ip.location.lat : -34.397,
+        lng: location ? location.ip.location.lng : 150.644,
+      }}
+    >
+      {props.isMarkerShown && (
+        <Marker
+          position={{
+            lat: location ? location.ip.location.lat : -34.397,
+            lng: location ? location.ip.location.lng : 150.644,
+          }}
+        />
+      )}
+    </GoogleMap>
+  );
+});

@@ -15,11 +15,7 @@ function App() {
         <Header />
         <Info />
         <div className='map'>
-          <MapScreen
-            isMarkerShown
-            lat={location ? location.ip.location.lat : -34.397}
-            lng={location ? location.ip.location.lng : 150.644}
-          />
+          <MapScreen isMarkerShown />
         </div>
       </div>
     </LocationContext.Provider>
