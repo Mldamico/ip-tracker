@@ -17,10 +17,8 @@ function App() {
         <div className='map'>
           <MapScreen
             isMarkerShown
-            googleMapURL='https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAwjavClqIBDXz-F30uVROAYCD2zujzy5E'
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `100%` }} />}
-            mapElement={<div style={{ height: `100%` }} />}
+            lat={location ? location.ip.location.lat : -34.397}
+            lng={location ? location.ip.location.lng : 150.644}
           />
         </div>
       </div>
