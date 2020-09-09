@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LocationContext } from '../context/LocationContext';
 
 export const InfoItem = ({ title, description }) => {
   return (
