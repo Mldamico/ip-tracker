@@ -4,8 +4,19 @@
   width: 80%;
   position: absolute;
   top: 230px;
-  left: 150px;
+  left: 10%;
   background-color: #fff;
   border-radius: 20px;
   z-index: 10;
+
+  
+
+  @media(max-width: 500px) {
+    flex-direction: column;
+    left: 50px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+  }
 }
