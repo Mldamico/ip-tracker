@@ -1,0 +1,11 @@
+.info__container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  top: 230px;
+  left: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 10;
+}

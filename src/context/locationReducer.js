@@ -5,7 +5,7 @@ const initialState = {
 
 export const locationReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.SETIP:
+    case types.SETLOCATION:
       console.log(action.payload);
       return {
         ...state,

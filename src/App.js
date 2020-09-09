@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import './App.css';
 import { Header } from './components/Header';
 import { Info } from './components/Info';
 import { MapScreen } from './components/Map';
@@ -11,10 +10,10 @@ function App() {
 
   return (
     <LocationContext.Provider value={{ location, dispatch }}>
-      <div className='app__container'>
+      <div className='app'>
         <Header />
         <Info />
-        <div className='map'>
+        <div className='app__map'>
           <MapScreen isMarkerShown />
         </div>
       </div>

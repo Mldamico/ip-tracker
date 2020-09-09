@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { LocationContext } from '../context/LocationContext';
 import { InfoItem } from './InfoItem';
 
@@ -6,7 +6,7 @@ export const Info = () => {
   const { location } = useContext(LocationContext);
 
   return (
-    <div className='Info__container'>
+    <div className='info__container'>
       <InfoItem
         title='IP ADDRESS'
         description={location ? location.ip.ip : '192.212.174.101'}

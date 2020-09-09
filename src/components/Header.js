@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import { AddressInput } from './AddressInput';
 export const Header = () => {
   return (
