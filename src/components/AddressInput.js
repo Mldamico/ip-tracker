@@ -17,6 +17,7 @@ export const AddressInput = () => {
         `https://geo.ipify.org/api/v1?apiKey=at_3jdhRyuxsaN11nn09VpIkORJnUNiG&ipAddress=${ip}`
       );
       const data = await resp.json();
+      console.log(data);
       if (!data.code === 422) {
         dispatch({ type: types.SETLOCATION, payload: data });
       }
