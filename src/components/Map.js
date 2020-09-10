@@ -25,15 +25,15 @@ export const MapScreen = compose(
     <GoogleMap
       defaultZoom={8}
       center={{
-        lat: location ? location.ip.location.lat : -34.397,
-        lng: location ? location.ip.location.lng : 150.644,
+        lat: location && location.ip.location.lat,
+        lng: location && location.ip.location.lng,
       }}
     >
       {props.isMarkerShown && (
         <Marker
           position={{
-            lat: location ? location.ip.location.lat : -34.397,
-            lng: location ? location.ip.location.lng : 150.644,
+            lat: location && location.ip.location.lat,
+            lng: location && location.ip.location.lng,
           }}
         />
       )}
